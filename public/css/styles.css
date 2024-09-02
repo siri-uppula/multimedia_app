@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#video-grid {
+  background-color: black;
+  height: 92vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  align-items: center;
+  padding: 3vw;
+  overflow: auto;
+}
+#video-grid video {
+  height: 300px;
+  width: 400px;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+  border-radius: 5px;
+  background-color: grey;
+}
+
+.controls {
+  height: 8vh;
+  width: 100vw;
+  background-color: #00ffff44;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+}
+.left-controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.middle-controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.middle-controls i {
+  margin: 2vw;
+}
+.right-controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 2vw;
+}
+.left-controls i {
+  margin: 2vw;
+}
+
+.left-controls i:hover {
+  color: red;
+}
+
+.right-controls button:hover {
+  color: red;
+}
+
+.chat-active-video-controls {
+  width: 80vw;
+}
+.hide-600px {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1250px) {
+  #video-grid {
+    grid-template-columns: auto auto;
+  }
+  #video-grid video {
+    margin: auto;
+  }
+}
+@media (max-width: 840px) {
+  #video-grid {
+    grid-template-columns: auto;
+  }
+  #video-grid video {
+    width: 100%;
+    height: 40vh;
+  }
+  .middle-controls {
+    display: none;
+  }
+  .left-controls i {
+    margin: 1rem;
+    margin-left: 2rem;
+  }
+}
+.d-none {
+  display: none;
+}
+.link {
+  position: absolute;
+  z-index: 2;
+  top: 1vw;
+  left: 1vw;
+  color: #ccfbfc;
+}
+.c-video {
+transform: rotateY('180deg');
+}
+.left-controls *{
+  font-size:20px;
+}
+
+.c-video {
+  transform: scaleX(-1);
+}
+
+.fas-custom{
+  font-size: 25px;
+}
+.fas-custom:hover{
+  cursor: pointer;
+  color: grey;
+}
+.c-btn {
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 3px;
+  height: 40px;
+  padding: 0px 20px;
+  text-align: center;
+  border-radius: 10px;
+  font-family: "Black Ops One", cursive;
+}
+.fa-link{
+  font-size: 20px;
+  margin: 10px;
+}

@@ -1,0 +1,160 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background: black;
+}
+
+.main-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
+.sub-container {
+  height: 100vh;
+  width: 50vw;
+}
+.section1{
+  transition: 0.5s ease-in-out;
+}
+.section2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+  flex-direction: column;
+  transition: 0.5s ease-in-out;
+}
+.sub-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50vh;
+  justify-content: space-between;
+}
+.room-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: 0.5s ease-in-out;
+}
+.input-room {
+  height: 30px;
+  width: 220px;
+  padding: 0px 10px;
+  font-family: "Black Ops One", cursive;
+}
+.c-btn {
+  border: none;
+  background-color: aqua;
+  border-radius: 3px;
+  height: 30px;
+  padding: 0 10px;
+  text-align: center;
+}
+.intro-section {
+  font-family: "Rubik Iso", cursive;
+  text-shadow: 10px 10px 10px black;
+}
+.new-room {
+  margin-right: 30px;
+}
+.btn-new-room,
+.btn-join-room,
+.email-btn {
+  font-family: "Black Ops One", cursive;
+}
+
+.email-btn {
+  background-color: black;
+  color: white;
+
+}
+
+.btn-join-room {
+  border: 1px solid black;
+  position: relative;
+  left: -2px;
+}
+
+.btn-new-room {
+  width: 132px;
+}
+.eroom-form {
+  display: flex;
+}
+@media screen and (max-width: 1050px) {
+  .section1{
+    width: 40vw;
+    transition: 0.5s ease-in-out;
+  }
+  .section2{
+    width:60vw;
+    transition: 0.5s ease-in-out;
+  }
+}
+@media screen and (max-width: 850px) {
+  .section1{
+    width: 30vw;
+    transition: 0.5s ease-in-out;
+  }
+  .section2{
+    width:70vw;
+    transition: 0.5s ease-in-out;
+  }
+}
+@media screen and (max-width: 750px) {
+  .section1{
+    width: 20vw;
+    transition: 0.5s ease-in-out;
+  }
+  .section2{
+    width:80vw;
+    transition: 0.5s ease-in-out;
+  }
+}
+@media screen and (max-width: 650px) {
+  .section1{
+    width: 10vw;
+    transition: 0.5s ease-in-out;
+  }
+  .section2{
+    width:90vw;
+    transition: 0.5s ease-in-out;
+  }
+}
+@media screen and (max-width: 550px) {
+  .section1{
+    width: 0vw;
+    transition: 0.5s ease-in-out;
+  }
+  .section2{
+    width:100vw;
+    transition: 0.5s ease-in-out;
+  }
+}
+@media screen and (max-width: 500px) {
+  .intro-section{
+    text-align: center;
+    max-width: 80vw;
+  }
+  .room-section{
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ease-in-out;
+  }
+  .new-room{
+    margin-bottom:30px ;
+  }
+
+}
+.section1{
+  background: url(../background.jpg);
+  background-size: cover;
+
+}
